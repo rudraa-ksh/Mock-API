@@ -32,7 +32,7 @@ function getRandomDisasters() {
     return shuffled.slice(0, randomCount);
 }
 
-app.get('/api/v1//disasters', (req, res) => {
+app.get('/api/v1/disasters', (req, res) => {
     const disasters = getRandomDisasters();
     
     res.json({
