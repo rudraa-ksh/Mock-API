@@ -29,7 +29,7 @@ function getRandomDisasters() {
     }
     
     const shuffled = [...locations].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, randomCount);
+    return shuffled.slice(0, 2);
 }
 
 app.get('/api/v1/disasters', (req, res) => {
