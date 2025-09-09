@@ -24,9 +24,9 @@ const locations = [
 function getRandomDisasters() {
     const randomCount = Math.floor(Math.random() * 5);
     
-    if (randomCount === 0) {
-        return [];
-    }
+    // if (randomCount === 0) {
+    //     return [];
+    // }
     
     const shuffled = [...locations].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 2);
